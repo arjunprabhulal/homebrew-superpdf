@@ -5,6 +5,12 @@ class Superpdf < Formula
   sha256 "b26c614d6636facce269396e5ebeab0dcab0a19fd308eb528f8ff0744b9578a8"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/arjunprabhulal/homebrew-superpdf/releases/download/superpdf-0.3.1"
+    sha256 cellar: :any,                 arm64_tahoe:  "00183811ef5e6aafba5da696df670788ab138c566d080f3f337665556e3873ab"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5ca2311a598512cc4625654fe4460d7c8ea70a4d88dfbe436d175af685afeed5"
+  end
+
   depends_on "node"
 
   def install
